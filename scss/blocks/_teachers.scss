@@ -1,0 +1,119 @@
+.teachers {
+    // background: var(--c-white);
+    padding: 70px 0;
+}
+
+.teachers__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--c-black);
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        background: var(--c-blue);
+        width: 40px;
+        height: 4px;
+        position: absolute;
+        bottom: -15px;
+        left: calc(53% - 60px);
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        background: var(--c-black);
+        width: 120px;
+        height: 1px;
+        position: absolute;
+        left: calc(50% - 60px);
+        bottom: -14px;
+
+
+    }
+
+
+}
+
+.teachers__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.teachers__item {
+    width: 450px;
+    height: 470px;
+    padding: 30px 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+
+    }
+}
+
+.teacher__item-img {
+    width: 230px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.teacher__item-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--c-black);
+    margin-bottom: 15px;
+}
+
+.teacher__item-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--c-black);
+    margin-bottom: 50px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social__item {
+    transition: all 0.3s ease;
+
+    &:hover {
+
+        .bxl-facebook-square,
+        .bxl-instagram-alt,
+        .bxl-linkedin-square {
+            color: var(--c-black);
+        }
+    }
+}
+
+
+.bxl-facebook-square,
+.bxl-instagram-alt,
+.bxl-linkedin-square {
+    font-size: 30px;
+    color: var(--c-black99);
+    transition: all 0.3s ease;
+
+}

@@ -1,0 +1,40 @@
+.header {
+    background: var(--c-white);
+    padding: 25px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header__site-logo {
+    width: 150px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.nav__item {
+    &:hover {
+        .nav__link {
+            color: var(--c-blue);
+        }
+    }
+}
+
+.nav__link {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--c-4F);
+    transition: all 0.3s ease;}
+
+.header__btn {
+@include btn;
+
+}

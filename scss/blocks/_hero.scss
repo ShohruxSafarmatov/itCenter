@@ -1,0 +1,41 @@
+.hero {
+    padding: 50px 0;
+}
+
+.hero__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__left-block {
+    text-align: left;
+}
+
+.hero__title {
+    font-family: "Raleway", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: var(--c-black);
+    margin-bottom: 10px;
+}
+
+.hero__subtitle {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 24px;
+    color: var(--c-black);
+    margin-bottom: 25px;
+
+}
+
+.hero__btn {
+    @include btn;
+}
+
+.hero__img {
+    width: 700px;
+    border-radius: 15px;
+}
