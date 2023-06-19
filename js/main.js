@@ -1,23 +1,25 @@
 "use strict";
 
-
 let elCounts = document.querySelectorAll(".about__item-span");
 let elInterval = 3000;
 
+
 elCounts.forEach((elCount) => {
-    let startValue = 0;
-    let endValue = parseInt(elCount.getAttribute("data-val"));
+  let startValue = 0;
+  let endValue = parseInt(elCount.getAttribute("data-val"));
 
-    let duration = Math.floor(elInterval / endValue);
-    let counter = setInterval(function(){
-        startValue += 1;
-        elCount.textContent = startValue;
-        if(startValue == endValue){
-            clearInterval(counter);
-        }
+  let duration = Math.floor(elInterval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    elCount.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
 
-    },duration)
+  }, duration)
 })
+
+
 
 // Login page
 
@@ -34,4 +36,3 @@ elLogoutBtn.addEventListener("click", function () {
 
   window.location.replace("login.html");
 });
-

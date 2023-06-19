@@ -90,6 +90,10 @@
     margin-bottom: 50px;
 }
 
+.teacher__course{
+    @include btn;
+}
+
 .social {
     display: flex;
     align-items: center;

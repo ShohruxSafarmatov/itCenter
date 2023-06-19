@@ -1,9 +1,4 @@
-.course {
-    background: var(--c-white);
-    padding: 70px 0;
-}
-
-.course__title {
+.contact__title {
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 32px;
@@ -39,40 +34,44 @@
     }
 }
 
-.course__list {
+
+.contact {}
+
+.contact__form {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    background-color: var(--c-white);
+    padding: 50px;
+    margin-bottom: 70px;
 }
 
-.course__item {
-    text-align: center;
-    padding: 10px 10px 30px 10px;
-    transition: all 0.3s ease;
-
-    &:hover {
-        transition: all 0.3s ease;
-        box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
-    }
+.contact__input {
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 18px;
+    width: 600px;
+    height: 40px;
+    border: 1px solid var(--c-black);
+    padding: 5px 10px 5px 10px;
 }
 
-.course__img {
-    width: 300px;
-    height: 200px;
+.contact__select {
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    width: 600px;
+    height: 40px;
+    border: 1px solid var(--c-black);
+    padding: 5px 10px 5px 10px;
+
 }
 
-.course__item-title {
-    margin-bottom: 10px;
-}
-
-.course__item-text {
-    margin-bottom: 15px;
-}
-
-
-
-.course__item-btns {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+.contact__btn{
+    @include btn;
 }
