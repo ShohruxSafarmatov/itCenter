@@ -22,7 +22,7 @@ elCounts.forEach((elCount) => {
 // Login page
 
 
-const elLogoutBtn = document.querySelector(".logout");
+const elLogoutBtn = document.querySelector(".header__btn");
 const localToken = window.localStorage.getItem("token");
 
 if (!localToken) {

@@ -28,7 +28,7 @@ elForm.addEventListener("submit", function (evt) {
   
           window.location.replace("index.html");
         } else {
-          alert("xatooooooooo");
+          alert("Login yoki parolni xato kiritdingiz!");
         }
       });
   });
