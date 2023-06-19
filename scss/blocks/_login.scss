@@ -1,0 +1,53 @@
+.login {
+    width: 700px;
+    border: 1px solid var(--c-black);
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 30px;
+}
+
+.login__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--c-black);
+    margin-bottom: 20px;
+}
+
+.login__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.login__name {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--c-black);
+    border: 1px solid var(--c-black);
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+}
+
+.login__pass {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--c-black);
+    border: 1px solid var(--c-black);
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+}
+
+.login__btn {
+    @include btn
+}

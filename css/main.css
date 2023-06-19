@@ -50,6 +50,75 @@ a {
   margin: 0 auto;
 }
 
+.login {
+  width: 700px;
+  border: 1px solid var(--c-black);
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 30px;
+}
+
+.login__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--c-black);
+  margin-bottom: 20px;
+}
+
+.login__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.login__name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--c-black);
+  border: 1px solid var(--c-black);
+  border-radius: 5px;
+  width: 500px;
+  height: 40px;
+}
+
+.login__pass {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--c-black);
+  border: 1px solid var(--c-black);
+  border-radius: 5px;
+  width: 500px;
+  height: 40px;
+}
+
+.login__btn {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--c-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background: var(--c-blue);
+  transition: all 0.3s ease;
+}
+.login__btn:hover {
+  color: var(--c-blue);
+  background: transparent;
+  border: 1px solid var(--c-blue);
+}
+
 .header {
   background: var(--c-white);
   padding: 25px 0;
